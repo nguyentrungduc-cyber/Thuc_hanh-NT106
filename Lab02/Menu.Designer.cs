@@ -113,9 +113,9 @@
             label3.AutoSize = true;
             label3.Location = new Point(364, 204);
             label3.Name = "label3";
-            label3.Size = new Size(182, 20);
+            label3.Size = new Size(175, 20);
             label3.TabIndex = 7;
-            label3.Text = "Ghi và đọc file (Nâng cao)";
+            label3.Text = "Ghi và đọc file (Mở rộng)";
             // 
             // label4
             // 
