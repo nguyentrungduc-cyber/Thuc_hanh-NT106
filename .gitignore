@@ -130,3 +130,5 @@ _NCrunch*
 # Click-Once directory
 publish/
 
+.vs/
+\
