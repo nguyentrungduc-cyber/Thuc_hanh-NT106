@@ -20,13 +20,13 @@ namespace Lab03
         private void btnTCPServer_Click(object sender, EventArgs e)
         {
             TCP_Server tcpServer = new TCP_Server();
-            tcpServer.Show();
+            tcpServer.Show(this);
         }
 
         private void btnTCPClient_Click(object sender, EventArgs e)
         {
             TCP_Client client = new TCP_Client();
-            client.Show();
+            client.Show(this);
         }
     }
 }
