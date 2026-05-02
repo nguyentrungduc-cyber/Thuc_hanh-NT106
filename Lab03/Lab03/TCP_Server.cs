@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text;
 using System.Windows.Forms;
-using System.Net;
-using System.Net.Sockets;
+using System.Net;  
+using System.Net.Sockets; 
 using System.Threading;
 
 namespace Lab03
@@ -92,7 +92,7 @@ namespace Lab03
                         byte[] buffer = new byte[1];
                         int bytesRecv = clientSocket.Receive(buffer);
                         if (bytesRecv == 0) break;
-                        text += Encoding.ASCII.GetString(buffer);
+                        text += Encoding.UTF8.GetString(buffer);
                     } while (!text.EndsWith("\n"));
 
                     if (!string.IsNullOrEmpty(text))
@@ -127,6 +127,11 @@ namespace Lab03
                 }
             }
             catch { }
+        }
+
+        private void lvLog_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

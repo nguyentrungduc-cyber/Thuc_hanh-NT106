@@ -47,5 +47,11 @@ namespace Lab03
                 MessageBox.Show("Lỗi khi mở Bài 2: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnBai3_Click(object sender, EventArgs e)
+        {
+            frmBai3 Bai03 = new frmBai3();
+            Bai03.Show();
+        }
     }
 }

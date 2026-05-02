@@ -49,6 +49,7 @@
             // 
             txtPort.Location = new Point(107, 51);
             txtPort.Name = "txtPort";
+            txtPort.PlaceholderText = "Nhập Port";
             txtPort.Size = new Size(440, 27);
             txtPort.TabIndex = 1;
             txtPort.TextChanged += txtPort_TextChanged_1;
@@ -71,6 +72,7 @@
             lvLog.TabIndex = 3;
             lvLog.UseCompatibleStateImageBehavior = false;
             lvLog.View = View.Details;
+            lvLog.SelectedIndexChanged += lvLog_SelectedIndexChanged;
             // 
             // columnHeader1
             // 
@@ -87,7 +89,7 @@
             Controls.Add(txtPort);
             Controls.Add(btnListen);
             Name = "TCP_Server";
-            Text = "Bai02";
+            Text = "TCP_Server";
             ResumeLayout(false);
             PerformLayout();
         }

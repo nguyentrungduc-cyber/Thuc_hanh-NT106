@@ -30,7 +30,7 @@
         {
             btnBai1 = new Button();
             btnBai2 = new Button();
-            button3 = new Button();
+            btnBai3 = new Button();
             button4 = new Button();
             SuspendLayout();
             // 
@@ -54,14 +54,15 @@
             btnBai2.UseVisualStyleBackColor = true;
             btnBai2.Click += btnBai2_Click;
             // 
-            // button3
+            // btnBai3
             // 
-            button3.Location = new Point(453, 201);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            btnBai3.Location = new Point(453, 201);
+            btnBai3.Name = "btnBai3";
+            btnBai3.Size = new Size(94, 29);
+            btnBai3.TabIndex = 2;
+            btnBai3.Text = "Bài 03";
+            btnBai3.UseVisualStyleBackColor = true;
+            btnBai3.Click += btnBai3_Click;
             // 
             // button4
             // 
@@ -78,7 +79,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button4);
-            Controls.Add(button3);
+            Controls.Add(btnBai3);
             Controls.Add(btnBai2);
             Controls.Add(btnBai1);
             Name = "Menu";
@@ -90,7 +91,7 @@
 
         private Button btnBai1;
         private Button btnBai2;
-        private Button button3;
+        private Button btnBai3;
         private Button button4;
     }
 }

@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace Lab03
 {
-    public partial class Bai03 : Form
+    public partial class frmBai3 : Form
     {
-        public Bai03()
+        public frmBai3()
         {
             InitializeComponent();
+        }
+
+        private void btnTCPServer_Click(object sender, EventArgs e)
+        {
+            TCP_Server tcpServer = new TCP_Server();
+            tcpServer.Show();
+        }
+
+        private void btnTCPClient_Click(object sender, EventArgs e)
+        {
+            TCP_Client client = new TCP_Client();
+            client.Show();
         }
     }
 }
