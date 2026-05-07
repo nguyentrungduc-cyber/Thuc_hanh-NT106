@@ -1,3 +1,4 @@
+using Lab4;
 using System.Security.Cryptography;
 
 namespace Lab04
