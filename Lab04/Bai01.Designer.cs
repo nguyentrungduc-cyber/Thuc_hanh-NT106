@@ -28,12 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Bai01";
+            txtURL = new TextBox();
+            btnGet = new Button();
+            rtbSource = new RichTextBox();
+            SuspendLayout();
+            // 
+            // txtURL
+            // 
+            txtURL.Location = new Point(23, 40);
+            txtURL.Name = "txtURL";
+            txtURL.Size = new Size(533, 27);
+            txtURL.TabIndex = 0;
+            // 
+            // btnGet
+            // 
+            btnGet.Location = new Point(694, 39);
+            btnGet.Name = "btnGet";
+            btnGet.Size = new Size(94, 29);
+            btnGet.TabIndex = 1;
+            btnGet.Text = "GET";
+            btnGet.UseVisualStyleBackColor = true;
+            btnGet.Click += btnGet_Click;
+            // 
+            // rtbSource
+            // 
+            rtbSource.Location = new Point(23, 83);
+            rtbSource.Name = "rtbSource";
+            rtbSource.Size = new Size(765, 355);
+            rtbSource.TabIndex = 2;
+            rtbSource.Text = "";
+            // 
+            // Bai01
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(rtbSource);
+            Controls.Add(btnGet);
+            Controls.Add(txtURL);
+            Name = "Bai01";
+            Text = "Bai01";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtURL;
+        private Button btnGet;
+        private RichTextBox rtbSource;
     }
 }

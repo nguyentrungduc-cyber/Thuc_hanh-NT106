@@ -28,12 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Bai02";
+            txtURL = new TextBox();
+            btnPost = new Button();
+            txtData = new TextBox();
+            rtbResponse = new RichTextBox();
+            SuspendLayout();
+            // 
+            // txtURL
+            // 
+            txtURL.Location = new Point(12, 22);
+            txtURL.Name = "txtURL";
+            txtURL.Size = new Size(611, 27);
+            txtURL.TabIndex = 0;
+            // 
+            // btnPost
+            // 
+            btnPost.Location = new Point(694, 22);
+            btnPost.Name = "btnPost";
+            btnPost.Size = new Size(94, 29);
+            btnPost.TabIndex = 1;
+            btnPost.Text = "POST";
+            btnPost.UseVisualStyleBackColor = true;
+            btnPost.Click += btnPost_Click;
+            // 
+            // txtData
+            // 
+            txtData.Location = new Point(12, 72);
+            txtData.Name = "txtData";
+            txtData.Size = new Size(611, 27);
+            txtData.TabIndex = 2;
+            // 
+            // rtbResponse
+            // 
+            rtbResponse.Location = new Point(12, 105);
+            rtbResponse.Name = "rtbResponse";
+            rtbResponse.Size = new Size(776, 333);
+            rtbResponse.TabIndex = 3;
+            rtbResponse.Text = "";
+            // 
+            // Bai02
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(rtbResponse);
+            Controls.Add(txtData);
+            Controls.Add(btnPost);
+            Controls.Add(txtURL);
+            Name = "Bai02";
+            Text = "Bai02";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtURL;
+        private Button btnPost;
+        private TextBox txtData;
+        private RichTextBox rtbResponse;
     }
 }
