@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab4
+namespace Lab04
 {
-    public partial class Form3 : Form
+    public partial class Bai01 : Form
     {
-        public Form3()
+        public Bai01()
         {
             InitializeComponent();
         }
