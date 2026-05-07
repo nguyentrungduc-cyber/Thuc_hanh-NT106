@@ -19,6 +19,13 @@ namespace Lab04
             this.Resize += new System.EventHandler(this.Form_Resize);
         }
 
+        public Bai04(string address)
+        {
+            InitializeComponent();
+            this.Resize += new System.EventHandler(this.Form_Resize);
+            webView21.Source = new Uri($"view-source:{address}");
+        }
+
         private void Form_Resize(object sender, EventArgs e)
         {
             webView21.Size = this.ClientSize - new System.Drawing.Size(webView21.Location);
@@ -58,7 +65,8 @@ namespace Lab04
         private void button2_Click(object sender, EventArgs e)
         {
             string currentUrl = webView21.Source.ToString();
-            webView21.CoreWebView2.Navigate($"view-source:{currentUrl}");
+            Bai04 source_form = new Bai04(currentUrl);
+            source_form.Show();
         }
 
         private async void button3_Click(object sender, EventArgs e)
